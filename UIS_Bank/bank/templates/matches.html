@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+{% block content %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">ISBN</th>
+        <th scope="col">Title</th>
+        <th scope="col">Author</th>
+        <th scope="col">Year</th>
+        <th scope="col">Star Rating</th>
+      </tr>
+    </thead>
+      {% for book in books %}
+      <tr>
+      <th scope="row">{{book.bookid}}</th>
+      <td>{{book.isbn}}
+      </td>
+      <td>{{book.title}}
+      </td>
+      <td>{{book.author}}
+      </td>
+      <td>{{book.year}}
+      </td>
+      </tr>
+      {% endfor %}
+  </table>
+  
+    <h2>Matches in Euro Cup 2021</h2>
+    <html>
+    <body>
+    <h5>Group A</h5>
+    <ul>
+    <li> (1)  June/11   21:00    Turkey   -   Italy         @ Stadio Olimpico, Rome </li>
+    <li> (2)  June/12   15:00    Wales    -   Switzerland   @ Olympic Stadium, Baku   # 17:00 UTC+4 </li>
+    </ul> 
+
+    <ul>
+    <li> (13) June/16   18:00    Turkey   -   Wales         @ Olympic Stadium, Baku   # 20:00 UTC+4 </li>
+    <li> (14) June/16   21:00    Italy    -   Switzerland   @ Stadio Olimpico, Rome </li>
+    </ul>
+
+    <ul>
+    <li> (25) June/20   18:00    Switzerland  - Turkey      @ Olympic Stadium, Baku   # 20:00 UTC+4 </li>
+    <li> (26) June/20   18:00    Italy        - Wales       @ Stadio Olimpico, Rome </li>
+    </ul>
+    <h5>Group B</h5>
+    <ul>
+    <li> (3)  June/12  18:00     Denmark    -   Finland     @ Parken Stadium, Copenhagen </li>
+    <li> (4)  June/12  21:00     Belgium    -   Russia      @ Krestovsky Stadium, Saint Petersburg  # 22:00 UTC+3 </li>
+    </ul>
+
+    <ul>
+    <li> (15) June/16  15:00     Finland    -   Russia      @ Krestovsky Stadium, Saint Petersburg  # 16:00 UTC+3 </li>
+    <li> (16) June/17  18:00     Denmark    -   Belgium     @ Parken Stadium, Copenhagen </li>
+    </ul>
+
+    <ul>
+    <li> (27) June/21  21:00     Russia     -   Denmark     @ Parken Stadium, Copenhagen </li>
+    <li> (28) June/21  21:00     Finland    -   Belgium     @ Krestovsky Stadium, Saint Petersburg   # 22:00 UTC+3 </li>
+    </ul>
+
+    <h5>Group C</h5>
+    <ul>
+    <li> (6)  June/13  18:00    Austria      -   North Macedonia   @ Arena Națională, Bucharest   # 19:00 UTC+3 </li>
+    <li> (5)  June/13  21:00    Netherlands  -   Ukraine           @ Johan Cruyff Arena, Amsterdam </li>
+    </ul>
+    <ul>
+    <li> (18) June/17  15:00    Ukraine      -   North Macedonia   @ Arena Națională, Bucharest   # 16:00 UTC+3 </li>
+    <li> (17) June/17  21:00    Netherlands  -   Austria           @ Johan Cruyff Arena, Amsterdam </li>
+    </ul>
+    <ul>
+    <li> (29) June/21  18:00    North Macedonia  -   Netherlands   @ Johan Cruyff Arena, Amsterdam </li>
+    <li> (30) June/21  18:00    Ukraine          -   Austria       @ Arena Națională, Bucharest   # 19:00 UTC+3 </li>
+    </ul>
+
+    <h5>Group D</h5>
+    <ul>
+    <li> (7)  June/13  15:00    England         -  Croatia         @ Wembley Stadium, London  # 14:00 UTC+1 </li>
+    <li> (8)  June/14  15:00    Scotland        -  Czech Republic  @ Hampden Park, Glasgow   # 14:00 UTC+1 </li>
+    </ul>
+    <ul>
+    <li> (19) June/18  18:00    Croatia         -  Czech Republic  @ Hampden Park, Glasgow  # 17:00 UTC+1 </li>
+    <li> (20) June/18  21:00    England         -  Scotland        @ Wembley Stadium, London  # 20:00 UTC+1 </li>
+    </ul>
+    <ul>
+    <li> (31) June/22  21:00    Croatia         -  Scotland        @ Hampden Park, Glasgow  # 20:00 UTC+1 </li>
+    <li> (32) June/22  21:00    Czech Republic  -  England         @ Wembley Stadium, London  # 20:00 UTC+1 </li>
+    </ul>
+
+    <h5>Group E</h5>
+    <ul>
+    <li> (10) June/14  18:00    Poland          -  Slovakia        @ Krestovsky Stadium, Saint Petersburg   # 19:00 UTC+3 </li>
+    <li> (9)  June/14  21:00    Spain           -  Sweden          @ La Cartuja, Seville </li>
+    </ul>
+    <ul>
+    <li> (21) June/18  15:00    Sweden          -  Slovakia        @ Krestovsky Stadium, Saint Petersburg   # 16:00 UTC+3 </li>
+    <li> (22) June/19  21:00    Spain           -  Poland          @ La Cartuja, Seville </li>
+    </ul>
+    <ul>
+    <li> (33) June/23  18:00    Slovakia        -  Spain           @ La Cartuja, Seville </li>
+    <li> (34) June/23  18:00    Sweden          -  Poland          @ Krestovsky Stadium, Saint Petersburg   # 19:00 UTC+3 </li>
+    </ul>
+    <h5>Group F</h5>
+    <ul>
+    <li> (11) June/15  18:00    Hungary         -  Portugal        @ Puskás Aréna, Budapest </li>
+    <li> (12) June/15  21:00    France          -  Germany         @ Allianz Arena, Munich </li>
+    </ul>
+    <ul>
+    <li> (23) June/19  15:00    Hungary         -  France          @ Puskás Aréna, Budapest </li>
+    <li> (24) June/19  18:00    Portugal        -  Germany         @ Allianz Arena, Munich </li>
+    </ul>
+    <ul>
+    <li> (35) June/23  21:00    Portugal        -  France          @ Puskás Aréna, Budapest </li>
+    <li> (36) June/23  21:00    Germany         -  Hungary         @ Allianz Arena, Munich </li>
+    </ul>
+    <ul>
+    <li> # Knockout phase / Finals </li>
+    <li> # Round of 16 </li>
+    <li> # Quarter-finals </li>
+    <li> # Semi-finals </li>
+    <li> # Final </li>
+    </ul>
+    </body>
+    </html>
+{% endblock content %}

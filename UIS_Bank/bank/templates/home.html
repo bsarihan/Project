@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+    <html>
+    <head>
+    <h1>{{ current_user.name }}</h1>
+    {% for post in posts %} 
+        <h2>Euro 2021</h2>
+        <p>Welcome to the European Championship Cup:</p>
+        <p>Click the button to go to our store.</p>
+         <a href="https://store.uefa.com/eu_en/uefaeuro-2020.html">
+            <button>UEFA store</button>
+        </a>
+        <body>
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/96/UEFA_Euro_2020_Logo.svg" alt="Simply Easy Learning" width="300" height="300" style="vertical-align:top;margin:1px 800px">
+         </body>
+        <body>
+        <footer>
+        <p>Author: Baran og Michael<br>
+        </footer>
+    </body>
+    </html>
+    {% endfor %}
+{% endblock content %}
+
+
