@@ -1,0 +1,13 @@
+--DROP VIEW IF EXISTS vw_tdw;
+--DROP VIEW IF EXISTS ww_invest_certificates;
+--DROP VIEW IF EXISTS vw_invest_accounts;
+
+-- ROLLBACK; commit;
+
+DROP TABLE IF EXISTS Matches;
+DROP TABLE IF EXISTS Euro;
+DROP TABLE IF EXISTS Stadiums;
+DROP TABLE IF EXISTS Groups;
+DROP TABLE IF EXISTS FranceMatches
+DROP TABLE IF EXISTS FranceGroups
+DROP TABLE IF EXISTS FranceStadiums
